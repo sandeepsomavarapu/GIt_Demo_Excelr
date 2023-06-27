@@ -13,7 +13,7 @@ Programming Language:
 ====================		
 
 	
-
+updated the daily notes
 
 POP 										OOPs
 c,cobol,photo,b,bcpl...						java,python,c++,.net...OOPL
