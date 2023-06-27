@@ -1,0 +1,1036 @@
+
+
+JVM,JRE,Operators,OOPS(),Flow Control...
+
+
+
+Language:
+=========
+		English--->Communication
+		
+		
+Programming Language:
+====================		
+
+	
+
+
+POP 										OOPs
+c,cobol,photo,b,bcpl...						java,python,c++,.net...OOPL
+
+
+					1)Performance	inheritance,polymorphisam
+					2)Security		abstraction,encapsulation
+
+
+Why Java ?
+
+		1)Platform Independent 
+		2)Garbage collection  jdk-->garbage collector
+
+
+Oracle
+
+machine 		machine2		machine3 
+windows11 			linux			mac
+
+java app			java app		java app
+
+
+WORA
+
+microsoft
+.net		platform dependent 
+
+
+
+1996 -->jdk 1.0
+
+2023		20
+
+telugu - 56 
+english- 26
+
+Compailation:
+---------------
+keywords -53 ---lower case 
+
+		33
+		
+public class Welcome {
+	public static void main(String[] args) {
+		System.out.println("welcome to java");
+	}
+}
+
+.java
+
+compiler -->compailation---->.class
+JDK-->JRE-->JVM-0's 1's
+
+
+
+
+Identifiers:
+============
+	Any name in java will call it as identifier 
+	
+
+	class	123Welcome
+	{
+	
+	}
+
+	a-z
+	A-Z
+	0-9
+	$
+	_
+
+Variables:
+==========
+		local	-->insode the method
+		
+		global	-->outside the method	--->instnace & static
+			datatype varname=value;
+
+
+PDT				NPDT:String,array,class..
+
+8 PDT
+
+byte	1 byte 			-128 to 127
+short   2 bytes			-32768 to 32767
+int 	4 bytes			-2147483648 to 2147483647		6/7/8/9
+long	8 bytes			 -2 power 68 to (2 power 68)-1   long age=32
+
+float 	4 bytes				float salary=23000.564343986767f;
+double	8 bytes 			double svalue=45.928452186392593;
+
+char 	 2 bytes 	M/'F'		english,18 international languages
+boolean  1 bit			true false 
+	
+tkinter
+									JAVA
+									
+	JSE 							JEE 		     						JME
+corejava,awt,swings,applets	|	servlets,jsp,mvc,spring mvc,webservices	| Android
+1)dekstop / standalone  ex:notepad,docx,media player,anti virus
+
+2)web application		ex:insta,youtube,fb urls,
+
+3)distributed app  		ex:banking,phonepe     
+
+4)mobile app				
+
+Instance and Static :
+====================
+
+1)Syntax
+		int age=23;		global variable and instance 
+	static 	int countryCode=91;//global variable static
+
+2)Memory		class & object 
+		static properties will get memory space only once  at the time class loading into jvm
+
+		instance properties will get memory space at the time object of creation
+		
+			class A  classname objname=new classname();
+						A a=new A();
+3)Access
+
+				 we can access instance by using objref
+				 we can access static by using classname
+
+
+4)Usage 
+
+			for common data countryname,school,orgname,clg name..... static 
+			
+			for unique data like  empid,mailid,aadhar,acntno...instance 
+
+
+			javac Welcome.java
+			
+			java Welcome		-->jvm 
+
+Methods
+public static void main(String[] args)
+
+
+accessmodifier instance/static returntype methodname(parameters list)
+{
+
+
+
+
+}
+	
+public int addOfTwo(int a,int b)
+{
+
+return a+b;
+
+}
+	
+public static void subOfTwo(int a,int b)
+{
+
+	System.out.println(a-b);
+
+}
+
+public  void mulOfTwo()
+{
+
+	System.out.println(a*b);
+
+}
+OOPS:
+=====
+Inheritance	  :extends & impelements
+polymorphisam :method overloading /method overriding 
+abstraction   abstract class /interface 
+encapsulation
+
+
+
+
+		CODE Reusability
+
+
+
+class  A
+{
+
+	1000 methods
+
+}
+
+
+
+class B	extends A				class C
+{
+
+2000 methods
+
+}
+
+By default parent class for every java class is...java.lang.Object
+by default package available for every java file java.lang
+
+
+Flow control:
+
+commandline args:
+==================
+		"12"+"13"=1213
+		
+		int a=Integer.parseInt("12);
+			
+
+int a[]=new int[5];
+index--0,1,2,3,4,....
+
+
+Scanner :
+==========
+
+
+username : excelr
+
+
+password  : excelr123
+
+login success
+
+login failure
+
+
+methods:
+--------
+
+	abstract methods
+	concrete methods
+
+
+concrete methods/non abstract 
+public int addOfTwo(int a,int b)
+{
+
+return a+b;
+
+}
+	
+public static void subOfTwo(int a,int b)
+{
+
+	System.out.println(a-b);
+
+}
+
+public  void mulOfTwo()
+{
+
+	System.out.println(a*b);
+
+}
+
+public abstract void divOfTwo();
+
+	hiding inter
+
+	send
+
+class			:collection of only concrete methods
+abstract class	:combination of both abstract+concrete methods
+interface		:collection of only abstract methods
+
+
+
+absraction:abstract classes & interfaces 
+
+
+Multiple Inheritance:
+=====================
+MI is not supported by java @ classes
+Mi is supported b java @ interfaces
+
+
+
+interface   Parent1{				interface   Parent2{
+public static final int a=123;
+m2();								m2();
+}									}
+
+
+
+class Child implements Parent1 ,Parent2
+{
+main()
+{
+	Child c1=new Child();
+			c1.m2();
+}
+
+m2()
+{}
+}
+
+AccessModifiers,Polymorphisam,this,super,final,constructor,encapsulation,String...
+
+public,private,protected,default
+
+
+
+public :everywhere we can access
+private:only inside the class  we can access
+protected :inside the package every where outside the package in child classes   we can access
+default  :package level scope
+
+
+
+Polymorphisam:
+================
+
+		Method Overloading
+		
+				methods name is same signature is different 
+									no of params
+									order of params
+									type of params
+
+public class MethodOverloadingEx {
+
+	public void add(float a, float b) {
+		System.out.println("add of two float numbers :" + (a + b));
+	}
+	public void add(int a, int b) {
+		System.out.println("add of two int numbers :" + (a + b));
+	}
+	public void add(int a, int b, int c) {
+		System.out.println("add of three numbers :" + (a + b + c));
+	}
+	public void add(int a, float b) {
+		System.out.println("add of int,float numbers :" + (a + b));
+	}
+	public void add(float a, int b) {
+		System.out.println("add of int,float numbers :" + (a + b));
+	}
+	public static void main(String[] args) {
+		MethodOverloadingEx obj=new MethodOverloadingEx();
+							obj.add(12.3f, 12.4f);
+							obj.add(12, 23.43f);
+	}
+}
+Type Promotion
+		
+		Method Overriding 
+
+			method name is same implementation/body is different 
+
+			inheritance
+				
+	final	before class/variable/method	
+				
+24-04-2023:
+==============				
+	Constructor:
+------------------	
+				
+				A
+			classname objname=new constructor();
+			A obj=new A();	
+				
+				constructor is used to create object 
+				provide default values  to the instance properties 
+				
+				A
+				public void m1()
+				{
+				
+				}
+				
+				public  A()
+				{
+				
+				}
+				
+				public  A(String name )
+				{
+				
+				}
+				
+				this ,super
+
+this is used to represent current class properties (variable,method,obj,constructor)
+super is used to represent parent class properties (variable,method,constructor)
+
+private 
+
+26-04-2023
+
+Encapsulation:
+==============
+	binding the data and corresponding methods together setters and getters
+
+private 
+
+
+
+Exception Handling:
+===================
+
+
+
+27-04-2023
+
+
+	age <18
+	
+	
+	class AgeNotValid extends RuntimeException/Exception/Throwable
+	{
+	
+		public AgeNotValid(String message)
+		{
+		super(message)
+		}
+	
+	}
+
+
+
+Scanner 
+
+		username	excelr
+		password	excelr123
+
+
+		login success
+		
+		InvalidCredentials-->Enter valid credentials
+
+
+https://www.javamadesoeasy.com/search/label/Exceptions
+
+
+
+https://www.javamadesoeasy.com/2015/05/exceptions-tutorial-in-java-in-detail_14.html
+
+
+String /StringBuffer/StringBuilder:
+====================================java.lang
+
+		"sandeep@123%"
+String is immutable		fixed 
+
+StringBuffer/StringBuilder both are muttable 
+
+
+		String literal
+					String name="excelr";
+	
+	
+	
+	String new keyword
+
+TASK:String methods 
+
+
+
+
+
+
+
+	
+
+javac filename.java
+
+java classname		JVM
+
+				CLSS
+				
+				
+				MA
+				
+				EE
+
+02-05-2023
+===========
+Stream IO
+
+
+file I/O   stream    java.io
+
+Character stream(FileWriter,FileReader,BufferedReader,BufferedWriter,PrintWriter)
+
+Byte stream(OutputStream,InputStream,FileOutputStream,FileInputStream)2 bytes
+
+Data Stream(DataInput,DataOutput,DataInputStream,DataOutputStream)
+
+Buffered Stream(Reader,Writer,BufferedInputStream,BufferedOutputStream)1024 bytes
+
+Object Stream(ObjectInputStream,ObjectOutputStream) Serialization/de-serialization
+	
+	transient keyword.
+	
+	
+	Serializable-->empty body--->marker interfaces
+	Clonnable---->cloning
+	RandomAccess -->zero abstract methods
+
+	java.io.Ser
+	
+	Emp e=new Emp();//Serilizable
+	
+	//interface --> any no of methods
+	
+	//marker interface --> no methods 
+	
+	//functional interface -->only one abstract method
+	
+	
+	
+
+03-05-2023
+===========
+MCQ Test Done 
+
+
+Arrays:
+=========
+
+	int id=123;
+	
+		id=234;
+	
+	arrays:group of objects/values which are similar 
+	
+	
+	int ids[]={22,23,23,5,5,644,66};
+	
+			index 0,1,2,3,4,5....
+	
+	1)arrays are fixed in size 
+	
+	2)arrays can hold only homogeneous data 
+	
+	3)no utility methods 
+	
+Collections:
+============
+	1)collections are not fixed in size 
+	
+	2)collections can hold both homogeneous,heterogeneous data 
+	
+	3)lots utility methods 
+
+
+04-05-2023
+===========
+Framework:readymade
+
+
+						Collection Framework
+	
+	collections classes/interfaces are available java.util.
+	
+	
+	1)collections are not fixed in size 
+	
+	2)collections can hold both homogeneous,heterogeneous data 
+	
+	3)lots utility methods 
+
+		duplicates are  allowed
+		insertion order is preserved
+		
+	List				Set
+	AL LL V 		HS
+				
+			S			LHS			TS
+	
+	
+	
+	NSO  Ascending -->alphabatical -->java.lang.Comparable-->compareTo -->FI -->SAM
+	
+	CSO	descending -->reverse of alphabatical order -->java.util.Comparator-->compare()-->FI-->SAM 
+	
+	QUEUE:
+	========
+	
+	MAP:
+==========
+	
+	11-05-2023
+	===========
+	
+	CASE STUDY
+================
+ProductManagement:  Collections
+-------------------
+		1)Add Product
+		2)Update Product
+		3)Delete Product
+		4)get Product
+		5)get All Products
+		6)get All Products by price range 
+		7)get All Products by Category
+		8)get All Products by brand name
+	
+	
+	
+	
+	Layered Architecture:
+	=====================
+	
+	
+	3 layers 
+	
+							Dao layer <--->  service layer	<--->	UI layer 
+	
+								DAO	  <--->	business logic	<--->	UI logic
+	
+	
+	
+	
+	
+	
+**********************Welcome to Imaginary Bank**********************
+
+
+
+Please enter a number to select one of the following options:
+1. Create Account
+2. Show Balance
+3. Make a Deposit
+4. Make a Withdrawal
+5. Fund Transfer Within the Bank
+6. Print Transactions for an Account Number
+7. Exit
+	
+	
+							Hashmap<Integer,Account> accounts=new Hashmap<Integer,Account>();
+							Hashmap<Integer,Transaction> transactions=new Hashmap<Integer,Transaction>();
+	Account									
+			accno
+			accHolderName
+			balance
+			address
+			contact					getBalance+depositAmount
+								Transaction	trans=new Transaction(++transid,accno,0,balance,updatedBalance,"deposit",new Date())
+									transactions.put(transid,trans)
+									getBalance-withdrawAmount
+									
+									fromaccount.getbalance-transaferamount
+									toaccount.getbalance+transferamount
+	Transaction
+			transactionId
+			accno
+			balance
+			toAccount
+			updatedBalance
+			transactionType  "deposit"/transfer/withdraw
+	 Date  dateofTransaction
+	 
+	
+	Multi tasking :
+	=============
+	Executing Several tasks simultaniously
+	
+			process based multi tasking
+				
+				Executing Several tasks simultaniously where each task is seperate independent process
+				
+			thread based multi tasking-->multi threading
+				Executing Several tasks simultaniously where every task is belongs to the same process
+
+			
+			
+		process:its collection of threads 	
+	
+	THread creation
+	1)implements Runnable 
+	2)extends Thread class 
+	
+Funnctional Interface-->
+Comparable -->compareTo
+Comparator-->compare
+Runnable-->run
+
+https://www.javamadesoeasy.com/2015/03/thread-states-thread-life-cycle-in-java.html
+	
+	
+	
+	Synchronization:
+	===============
+	
+	SBuffer,		SBulider
+thread safety		no thread safety
+
+ArrayList 			Vector
+
+Not sync			synchronized
+	
+	
+		synchronized
+	
+	
+	public synchronized void m1()
+	{
+													t1,t2,t3,t4
+	
+	}
+	public  void m1()
+	{
+	
+	
+	}
+	
+	
+	Inter Thread Communcation:
+	==========================
+	
+	thread communication
+	
+	notify,notifyAll,wait
+	
+	
+	
+	1-100
+	2 threads
+	
+	even thread--2,4,6,8,10...100
+	odd thread--1,3,5,7,9....99
+	
+	
+	
+		even-->wait...--->
+	
+	
+				notify,notifyAll
+
+
+		odd-->1-->notify(),wait()
+
+
+
+6. Assume the following method is properly synchronized and called from a thread A on an object B:
+wait(2000);
+
+After calling this method, when will the thread A become a candidate to get another turn at the CPU?
+a) After the lock on B is released, or after two seconds.
+b) Two seconds after thread A is notified.
+c) After thread A is notified, or after two seconds.
+d) Two seconds after lock B is released.
+
+Ans:										waiting
+				synchronized m1()				A  notify()
+					{
+					wait(2000)//sleep()
+					}
+
+
+		thread A	  	Obj B
+
+			m1()
+
+
+HTML:
+=======
+		
+		
+		
+			Website:its a collection of webpages 
+			
+			
+		web page:
+				
+					static web page			 fixed 			facebook login
+					dynamic web page 1		 not fixed 		facebook home
+
+
+HTML:it is used to create static web pages 
+
+
+	elements ,tags
+
+.html
+
+<html>
+<head>
+		we can load other html,css,js
+</head>
+<body>
+		
+</body>
+
+</html>
+
+1993
+1.0
+team berners lee
+
+5.x
+
+		browsers			engine
+							
+		google chrome	-->	 V8  -->DOM Tree
+		internet explorer     chakra engine
+		mozilla firefox  --> spider monkey
+
+html
+	basic tags
+	
+CSS:
+==== 3
+
+	cascading style sheet 
+
+
+		3 ways
+		
+		1)inline css   <h1   style="propname:value;proname:value">
+		2)internal css <head> <style>selector{propname:propvalue,propname:propvalue}
+		3)external css		.css
+
+
+
+selectors:
+
+		1)Id Selector			#
+		2)class selector		.	
+		3)group selector		h2,h3,p,a......
+		4)element selector		h1
+		5)all selector			*
+
+
+
+
+
+https://www.w3schools.com/css/default.asp
+
+<head>
+		<link rel="stylesheet" href="cssfilename.css"/>
+									bootstrap.css
+								CDN link
+
+
+
+<table>
+	<tr>
+		<td>Username </td>
+		<td> <input type="text" name="a"></td>
+	</tr>
+	
+
+</table>
+
+inline css
+internal css
+external css
+
+
+colors :
+	
+		color name 
+		rgb
+		hex
+		rgba
+		hsl
+		hsla
+
+
+
+
+
+
+
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+
+
+<link rel="stylesheet" href="mystyles.css">
+
+<link rel="stylesheet" href="bootstrap.css">
+								CDN
+
+
+
+RWD-->responsive web design
+
+
+
+Grid Classes
+The Bootstrap 4 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+
+
+
+Javascript:
+===========
+
+Variabels:
+===========
+	java 	datatype varname=value; static typed programming language
+	
+	Javascript	var eid=123;  dynamic typed PL
+		
+			inline	 	body-->Script
+			internal	head-->script loading
+			external	js	
+		
+		
+		
+		MERN-->Mongodb,Expressjs,react,node
+		MEAN-->mongodb,expressjs,angular,node
+
+
+
+	ECMA SCRIPT6 OR 2016
+	
+	<p id="sleeping"> </p>
+
+
+		document.write()
+		document.getElementById("sleeping").innerHTML="welcome to JS"
+											.VALUE
+
+<input type="text" name="" id"">
+
+<input type="text" name="" id"">
+
+
+
+
+
+login page 
+
+	username :excelr
+	password:excelr123
+
+
+
+		username.lenth>6
+	
+JQUERY:
+=======
+JQuery:write less ,do more 
+
+
+		john resig 2006
+		
+					
+					
+		.js
+				
+
+	CDN
+		syntax:	$(document).ready(handler);
+
+			
+			
+			
+			
+			
+			$(document).ready(function(){
+		
+		alert("welcome to Jquery");
+		
+		
+		
+		});
+
+Jquery Selectors:
+===============
+
+new request
+
+HTTP-->stateless
+
+	local storage
+	
+	session storage
+
+xml
+
+
+			<svg>
+GIT:
+===
+	GIT-->DVCS
+	
+	SVN-->CVCS--->central
+
+
+
+GIT--->command line
+GIT Hub--->GUI
+BitBucket
+gitlab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
