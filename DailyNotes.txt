@@ -12,8 +12,13 @@ Language:
 Programming Language:
 ====================		
 
+<<<<<<< HEAD
 	
 updated the daily notes
+=======
+prashanth	
+
+>>>>>>> 3c43cafad7b53ae981869646afcb5778830a1cf8
 
 POP 										OOPs
 c,cobol,photo,b,bcpl...						java,python,c++,.net...OOPL
