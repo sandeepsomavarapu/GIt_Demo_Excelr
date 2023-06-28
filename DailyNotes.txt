@@ -19,6 +19,7 @@ updated the daily notes
 prashanth	
 Excelr Hyderabad India
 Excelt Javafullstack
+updating for branch example
 
 >>>>>>> 3c43cafad7b53ae981869646afcb5778830a1cf8
 
